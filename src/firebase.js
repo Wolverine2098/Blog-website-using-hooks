@@ -11,6 +11,7 @@ import 'firebase/firestore';
 
 
   
+  
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 export const firestore = firebase.firestore();
