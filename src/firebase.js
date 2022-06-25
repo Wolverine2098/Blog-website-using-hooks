@@ -9,6 +9,8 @@ import 'firebase/firestore';
     appId: "1:767995400684:web:1d101ef7c78c82dae770c9"
   };
 
+
+  
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 export const firestore = firebase.firestore();
