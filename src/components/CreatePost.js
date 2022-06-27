@@ -1,6 +1,6 @@
 // import { useState } from "react/cjs/react.production.min";
 import react from "react";
-
+import {firestore} from '../firebase';
 import { useState } from "react" 
 function CreatePost() {
   const [title,setTitle] = useState('');
@@ -12,6 +12,14 @@ function handleSubmit(e){
   console.log('title',title);
   console.log('Subtitle',subTitle);
   console.log('content',content);
+
+firestore.collection('posts').add({
+title,
+content,
+subTitle,
+
+
+});createdAt; new Date();
 }
 
   return <div className="create-post">
