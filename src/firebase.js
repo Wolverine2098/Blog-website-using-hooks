@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
 const firebaseConfig = {
   apiKey: "AIzaSyCgraDp7iyYWW4MrRYM4QoOXji3Zp1BOHA",
   authDomain: "react-hooks-blog-5136f.firebaseapp.com",
