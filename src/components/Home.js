@@ -1,9 +1,21 @@
 import {useState,useEffect} from 'react';
-
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-
 import { firestore } from '../firebase';
+
+
+const BlogHeading = styled.h1`
+text-align: center;
+  color: #2196f3;
+  margin-bottom: 2px;
+
+`;
+
+const PostSubTitle = styled.p`
+font-size: 13px;
+`
+
+
 function Home() {
   const [posts,setPosts] = useState([]);
 
@@ -24,7 +36,7 @@ firestore
 });
   },[]);
   return (<div className="home">
-    <h1>Tech Blog</h1>
+    <BlogHeading>Tech Blog</BlogHeading>
      <div id="blog-by">Raunak</div>
      {
        posts.map((post,index)=>(
@@ -34,7 +46,7 @@ firestore
   
 </Link>
 
-<p>{post.subTitle}</p>
+<PostSubTitle>{post.subTitle}</PostSubTitle>
            </div>
        ))
      }
