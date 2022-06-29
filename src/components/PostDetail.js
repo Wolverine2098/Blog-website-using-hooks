@@ -5,9 +5,8 @@ function PostDetail() {
 
 const [post,setPost] = useState({});
 const {postId} = useParams();
-useEffect(()=>{
-firestore
-.collection('posts')
+useEffect(() => {
+firestore.collection('posts')
 .doc(postId)
   .get()
   .then(
